@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Berhasil - Dallas Fried Chicken</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-300 sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20 items-center relative">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <img src="image/logo.png" alt="Dallas Fried Chicken" class="h-20">
+            </div>
+      
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-12 absolute left-1/2 transform -translate-x-1/2">
+              <a href="menu.html" class="text-black font-semibold hover:underline">Menu</a>
+              <a href="paketspesial.html" class="text-black font-semibold hover:underline">Paket Spesial</a>
+              <a href="contact.html" class="text-black font-semibold hover:underline">Contact Us</a>
+            </div>
+      
+            <!-- Shopping Cart & User -->
+            <div class="hidden md:flex items-center space-x-6 ml-auto">
+              <a href="keranjang.html" class="relative text-black hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+              </a>
+      
+              <!-- User Dropdown on Click -->
+              <div class="relative">
+                <button id="user-menu-button" class="text-black font-semibold focus:outline-none">
+                  Hallo - TontoFar
+                </button>
+                <div id="user-dropdown" class="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg hidden z-50">
+                  <a href="akun.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Akun Saya</a>
+                  <a href="history.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">History Pesanan</a>
+                  <a href="paketspesial.html" class="text-black font-semibold hover:underline">Promo</a>
+                  <a href="homepage.html" class="block px-4 py-2 text-sm text-red-600 hover:bg-red-100">Log out</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Mobile -->
+            <div class="md:hidden flex items-center space-x-4">
+              <a href="keranjang.html" class="relative text-black hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+              </a>
+      
+              <button id="mobile-menu-button" class="text-black focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-lg shadow-lg max-w-2xl mx-auto p-8 text-center">
+            <!-- Progress Steps -->
+            <div class="flex justify-between mb-12">
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-bold mb-2">1</div>
+                    <span class="text-sm font-medium text-gray-500">Keranjang</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-bold mb-2">2</div>
+                    <span class="text-sm font-medium text-gray-500">Pembayaran</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white font-bold mb-2">3</div>
+                    <span class="text-sm font-medium text-gray-700">Selesai</span>
+                </div>
+            </div>
+
+            <!-- Success Icon -->
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">Pembayaran Berhasil!</h1>
+            <p class="text-gray-600 mb-8">Pesanan Anda #DFC12345 telah berhasil diproses. Terima kasih telah berbelanja di Dallas Fried Chicken.</p>
+            
+            <!-- Order Summary -->
+            <div class="bg-gray-50 rounded-lg p-6 mb-8 text-left">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Detail Pesanan</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">No. Pesanan</span>
+                        <span class="font-medium">#DFC12345</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Tanggal</span>
+                        <span class="font-medium">12 Juni 2023, 14:30 WIB</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Metode Pembayaran</span>
+                        <span class="font-medium">Transfer Bank (BCA)</span>
+                    </div>
+                    <div class="flex justify-between border-t pt-3 mt-3">
+                        <span class="text-gray-900 font-semibold">Total Pembayaran</span>
+                        <span class="text-red-600 font-bold">Rp 130.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estimated Delivery -->
+            <div class="bg-blue-50 rounded-lg p-4 mb-8 flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                    <h3 class="font-medium text-blue-900 mb-1">Estimasi Pengiriman</h3>
+                    <p class="text-sm text-blue-800">Pesanan Anda akan tiba dalam 30-45 menit</p>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="menu.html" class="px-6 py-3 border border-gray-300 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                    Pesan Lagi
+                </a>
+                <a href="homepage.html" class="px-6 py-3 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 transition-colors">
+                    Kembali ke Beranda
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const userButton = document.getElementById('user-menu-button');
+    const userDropdown = document.getElementById('user-dropdown');
+  
+    userButton.addEventListener('click', () => {
+      userDropdown.classList.toggle('hidden');
+    });
+  
+    // Optional: Close dropdown if clicked outside
+    window.addEventListener('click', (e) => {
+      if (!userButton.contains(e.target) && !userDropdown.contains(e.target)) {
+        userDropdown.classList.add('hidden');
+      }
+    });
+  </script>
+</html>
